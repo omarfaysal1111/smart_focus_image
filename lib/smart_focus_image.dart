@@ -63,7 +63,7 @@ class _SmartFocusImageState extends State<SmartFocusImage> {
       final uiImage = frameInfo.image;
 
       final inputImage = InputImage.fromFile(widget.imageFile);
-      
+
       if (widget.returnAllFaces) {
         final detectedRects = await _analyzer.calculateAllFaceRects(inputImage);
         final List<Rect> finalRects = [];
@@ -120,7 +120,6 @@ class _SmartFocusImageState extends State<SmartFocusImage> {
         }
       }
     } catch (e) {
-      print("Error processing image: $e");
       if (mounted) setState(() => _isLoading = false);
     }
   }
@@ -185,7 +184,7 @@ class _SmartFocusImageState extends State<SmartFocusImage> {
         );
       }
 
-      return Container(
+      return SizedBox(
         width: widget.width,
         height: widget.height,
         child: ClipRect(

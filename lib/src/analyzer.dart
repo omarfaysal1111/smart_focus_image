@@ -19,7 +19,6 @@ class SmartImageAnalyzer {
       final sortedFaces = _sortFacesBySize(faces);
       return sortedFaces.first.boundingBox;
     } catch (e) {
-      print("Error inside SmartImageAnalyzer: $e");
       return null;
     }
   }
@@ -33,7 +32,6 @@ class SmartImageAnalyzer {
       final sortedFaces = _sortFacesBySize(faces);
       return sortedFaces.map((face) => face.boundingBox).toList();
     } catch (e) {
-      print("Error inside SmartImageAnalyzer: $e");
       return [];
     }
   }
@@ -54,4 +52,3 @@ class SmartImageAnalyzer {
     _faceDetector.close();
   }
 }
-
