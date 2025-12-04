@@ -1,0 +1,2 @@
+/Users/admin/smart_focus_image/example/android/app/.cxx/Debug/5f1f4rd2/x86_64/CMakeFiles/edit_cache.dir
+/Users/admin/smart_focus_image/example/android/app/.cxx/Debug/5f1f4rd2/x86_64/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,23 @@
+name: smart_focus_image
+description: A Flutter package that automatically crops images to focus on detected faces using Google ML Kit. Supports single face or multiple faces detection with smart cropping.
+version: 1.0.0
+homepage: https://github.com/yourusername/smart_focus_image
+repository: https://github.com/yourusername/smart_focus_image
+issue_tracker: https://github.com/yourusername/smart_focus_image/issues
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_mlkit_face_detection: ^0.10.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
